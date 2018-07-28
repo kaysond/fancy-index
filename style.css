@@ -34,6 +34,10 @@ table tr.even {
   background: whitesmoke;
 }
 
+td.indexcolname {
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: #3498db;
@@ -48,24 +52,22 @@ a:visited {
 }
 
 .img-wrap {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
   vertical-align: middle;
   display: inline-block;
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
+  float: left;
 }
 
 .img-wrap img {
   display: block;
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  object-fit: contain;
 }
 
 .img-wrap + a {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
+  margin-left: 24px;
 }
 
 .hidden {
